@@ -1,4 +1,4 @@
-# ![Pottamus]
+# BHMD Angular
 
 > ### A standard, opinionated, and scalable [Angular](https://angular.io/) application template with [Hippo Cart API](https://github.com/hippohq/hippo) integration.
 
