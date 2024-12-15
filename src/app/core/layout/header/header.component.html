@@ -1,0 +1,58 @@
+<nav
+  class="relative z-10 flex w-full items-center justify-center border-b-[1px] border-slate-200 bg-white py-4 shadow-md"
+>
+  <div class="container">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center justify-start gap-4">
+        <div class="md:hidden">
+          <ng-icon
+            name="featherMenu"
+            size="20"
+            class="transition-colors duration-300 group-hover:text-blue-500"
+          ></ng-icon>
+        </div>
+        <ul id="nav--left" class="hidden items-center justify-start gap-4 text-slate-500 md:flex">
+          <li>
+            <a routerLink="/" routerLinkActive="active" class="inline-block h-8 w-auto">
+              <img
+                src="/img/bhmd-logo.webp"
+                alt="Beverly Hills MD"
+                class="hidden h-full w-auto object-contain md:block"
+              />
+            </a>
+          </li>
+          <div class="mx-4 h-8 w-[1px] bg-slate-200"></div>
+          <li
+            class="flex items-center gap-1 text-sm font-medium text-slate-500 transition-colors duration-300 hover:text-blue-500"
+          >
+            <a routerLink="/login" routerLinkActive="active">Shop All</a>
+            <ng-icon name="featherChevronDown" size="16" class="hidden md:block"></ng-icon>
+          </li>
+        </ul>
+      </div>
+
+      <a routerLink="/" routerLinkActive="active" class="inline-block h-8 w-auto md:hidden">
+        <img src="/img/bhmd-logo-small.webp" alt="Beverly Hills MD" class="h-full w-auto object-contain" />
+      </a>
+
+      <ul id="nav--right" class="flex items-center justify-end gap-4 text-slate-500">
+        <li class="group">
+          <ng-icon
+            name="featherSearch"
+            size="20"
+            class="transition-colors duration-300 group-hover:text-blue-500"
+          ></ng-icon>
+        </li>
+        <li class="group">
+          <button id="shoppingCartButton" (click)="showCartDrawer()">
+            <ng-icon
+              name="featherShoppingBag"
+              size="20"
+              class="transition-colors duration-300 group-hover:text-blue-500"
+            ></ng-icon>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

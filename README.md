@@ -1,8 +1,14 @@
-# BhmdAngular
+# ![Pottamus]
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
+> ### A standard, opinionated, and scalable [Angular](https://angular.io/) application template with [Hippo Cart API](https://github.com/hippohq/hippo) integration.
 
-## Development server
+This project was created to demonstrate a fully-fledged application built with Angular that includes basic CRUD operations, authentication, routing, pagination, and more.
+
+We've gone to great lengths to adhere to the [Angular Style Guide](https://angular.io/guide/styleguide) and [Hippo Cart API](https://github.com/hippohq/hippo) standards.
+
+If you have any questions, or need help, please ask in Slack.
+
+## Creating an App
 
 To start a local development server, run:
 

@@ -1,0 +1,40 @@
+<footer class="flex w-full flex-col items-stretch gap-6 bg-blue-900 p-4 py-8 text-slate-100">
+  <section>
+    <div class="container">
+      <div class="grid grid-cols-12 grid-rows-1 gap-4">
+        <div class="col-span-4 flex flex-col items-stretch justify-start gap-4">
+          <a routerLink="/" routerLinkActive="active" class="inline-block h-8 w-auto">
+            <img src="/img/bhmd-logo-white.webp" alt="Beverly Hills MD" class="h-full w-auto object-contain" />
+          </a>
+          <p class="text-xs text-slate-300">
+            The Beverly Hills MD product line aims to help people look and feel their very best, by way of the newest,
+            safest, and most promising technology available
+          </p>
+          <div class="flex items-center justify-start gap-1">
+            <p class="font-serif text-sm italic text-white">Follow us on social</p>
+            <div class="mx-1 h-[1px] w-10 bg-white"></div>
+            <ul class="flex h-5 items-center gap-4">
+              <li *ngFor="let icon of socialMediaIcons" class="h-full">
+                <app-social-media-icon [icon]="icon"></app-social-media-icon>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="border-[1px] border-slate-100 p-4">
+        <p class="border-slate-200 text-xs">
+          † These statements have not been evaluated by the Food and Drug Administration. This product is not intended
+          to diagnose, treat, cure or prevent any disease. Use only as directed. Consult your healthcare provider before
+          using supplements. The information provided herein is intended for your general knowledge only and is not
+          intended to be, nor is it, medical advice or a substitute for medical advice. If you have or suspect you have,
+          a specific medical condition or disease, please consult your healthcare provider. Want to know what others
+          thought about Beverly Hills MD products? Check out our reviews.
+        </p>
+      </div>
+    </div>
+  </section>
+</footer>

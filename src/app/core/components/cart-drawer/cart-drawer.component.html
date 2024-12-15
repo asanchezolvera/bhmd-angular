@@ -1,0 +1,35 @@
+<div
+  *ngIf="isShown$ | async"
+  class="backdrop-blur[2px] absolute bottom-0 left-0 right-0 top-0 z-[99] flex h-screen w-screen items-stretch justify-end bg-black/10"
+>
+  <div
+    class="flex h-full w-11/12 flex-col items-start justify-start border-l-[1px] border-slate-200 bg-white py-6 shadow-2xl md:max-w-96"
+  >
+    <div class="flex w-full items-center justify-between px-6">
+      <div class="flex items-center gap-4">
+        <h6 class="font-serif text-xl font-medium text-slate-700">My Shopping Cart</h6>
+      </div>
+      <div class="flex items-center justify-end gap-4">
+        <ng-icon name="featherMoreHorizontal" size="20" class="text-slate-500"></ng-icon>
+        <button>
+          <ng-icon name="featherX" size="20" class="text-slate-500"></ng-icon>
+        </button>
+      </div>
+    </div>
+    <div class="flex h-full w-full flex-col items-stretch justify-start gap-4"></div>
+    <div class="flex w-full flex-col items-stretch justify-start gap-4">
+      <div class="flex items-center justify-between border-y-[1px] border-slate-200 bg-slate-50 px-6 py-4">
+        <p class="text-sm font-medium text-slate-500">Subtotal:</p>
+        <p class="font-medium text-slate-700">$0.00</p>
+      </div>
+      <div class="px-6">
+        <button
+          class="flex w-full items-center justify-center gap-2 rounded-md bg-blue-600 px-4 py-3 text-center text-sm font-medium text-white shadow-lg transition-colors duration-300 hover:bg-blue-500 active:bg-blue-700"
+        >
+          <ng-icon name="featherShoppingCart" size="16" class="text-white"></ng-icon>
+          Proceed to checkout
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply min-h-screen w-screen overflow-x-hidden bg-white;
+}
+
+.container {
+  @apply mx-auto max-w-screen-2xl px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  @apply w-full rounded-md border-[1px] border-slate-200 bg-white px-4 py-2 text-sm text-slate-700 shadow-sm placeholder:text-slate-400 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500;
+}
